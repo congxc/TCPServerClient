@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        style="@style/ToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="@color/white"
+            android:id="@+id/server_ip"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:padding="5dp"
+            android:textColor="#1f2120"
+            android:gravity="center"
+            android:text="192.168.0.1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/server_port"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:textColor="#1f2120"
+            android:text="8001"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:background="#464e4e"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:fadingEdge="none"
+            android:padding="8dp"
+            android:id="@+id/send_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <android.support.v7.widget.RecyclerView
+            android:padding="8dp"
+            android:id="@+id/receive_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/et_message"
+            android:background="#d4cece"
+            android:minLines="3"
+            android:textColor="#d14f83"
+            android:textSize="16dp"
+            android:gravity="start|top"
+            android:text="消息内容"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="@string/start_server"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TCPServerClient</string>
+    <string name="TCP">TCP</string>
+    <string name="server">服务端</string>
+    <string name="client">客户端</string>
+    <string name="UDP">UDP</string>
+    <string name="send">发送</string>
+    <string name="connect">连接</string>
+    <string name="start_server">开启服务器</string>
+</resources>
